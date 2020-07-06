@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/project/assets/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="/project/libraries/CircleType-master/dist/circletype.min.js"></script>
+</head>
+
+<body>
+    <div class="navigation" id="navigation">
+    </div>
+    <div class="main">
+        <div class="main" id="circle1">
+            <script src="/project/assets/script.js" id="length-100"></script>
+        </div>
+        <div class="main" id="circle2">
+            <script src="/project/assets/script.js" id="length-200"></script>
+        </div>
+    </div>
+    <script>
+        new CircleType(document.getElementById('circle1'));
+        new CircleType(document.getElementById('circle2'));
+    </script>
+</body>
+
+</html>
