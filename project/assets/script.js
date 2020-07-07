@@ -1,5 +1,3 @@
-
-
 function makeid(length) {
 	var result           = '';
 	var characters       = '\\/';
@@ -20,7 +18,12 @@ iidd.each(function() {
 });
 */
 
-var res = document.querySelector("[id^=length-]");
-var id = res.id;
-var endOfId = id.replace("length-", "");
-console.log(endOfId);
+//var res = document.querySelector("[id^=length-]");
+//var id = res.id;
+//console.log(id);
+//var endOfId = id.replace("length-a-", "");
+//var endOfIdb = id.replace("length-b-", "");
+
+//console.log(endOfIdb);
+
+//document.write(makeid(endOfId));

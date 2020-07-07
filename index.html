@@ -4,28 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Digital Gears</title>
     <link rel="stylesheet" href="/project/assets/stylesheets/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="/project/libraries/CircleType-master/dist/circletype.min.js"></script>
+    <script src="/project/assets/script.js"></script>
 </head>
 
 <body>
-    <div class="navigation" id="navigation">
-    </div>
     <div class="main">
-        <div class="main" id="circle1">
-            <script src="/project/assets/script.js" id="length-100"></script>
+        <div class="main circle1" id="circle1" style="font-size: 115px;">
+            <script type="text/javascript">
+                document.write(makeid(150));
+            </script>
         </div>
-        <div class="main" id="circle2">
-            <script src="/project/assets/script.js" id="length-200"></script>
+        <div class="main circle2" id="circle2" style="font-size: 120px; margin-top: 77px;">
+            <script type="text/javascript">
+                document.write(makeid(120));
+            </script>
+        </div>
+        <div class="main circle3" id="circle3" style="font-size: 120px; margin-top: 158px;">
+            <script type="text/javascript">
+                document.write(makeid(113));
+            </script>
         </div>
     </div>
     <script>
         new CircleType(document.getElementById('circle1'));
         new CircleType(document.getElementById('circle2'));
+        new CircleType(document.getElementById('circle3'));
     </script>
 </body>
-
 </html>
