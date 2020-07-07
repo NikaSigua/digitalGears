@@ -15,20 +15,49 @@
     left: 50%;
 }
 
+@keyframes circle1 {
+    from {}
+    to { transform: rotate(360deg); }
+}
 
 @keyframes circle2 {
     from {}
     to { transform: rotate(-360deg); }
 }
 
-@keyframes circle1 {
+@keyframes circle3 {
     from {}
     to { transform: rotate(360deg); }
 }
 
-@keyframes circle3 {
+@keyframes circle4 {
     from {}
-    to { transform: rotate(300deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes circle5 {
+    from {}
+    to { transform: rotate(360deg); }
+}
+
+@keyframes circle6 {
+    from {}
+    to { transform: rotate(-360deg); }
+}
+
+@keyframes circle7 {
+    from {}
+    to { transform: rotate(-360deg); }
+}
+
+@keyframes circle8 {
+    from {}
+    to { transform: rotate(-360deg); }
+}
+
+@keyframes circle9 {
+    from {}
+    to { transform: rotate(-360deg); }
 }
 
 .circle1{
@@ -45,9 +74,51 @@
     animation-direction: alternate;
 }
 
-.circle2{
-    animation-duration: 90s;
+.circle3{
+    animation-duration: 100s;
     animation-name: circle3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle4{
+    animation-duration: 150s;
+    animation-name: circle4;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle5{
+    animation-duration: 110s;
+    animation-name: circle5;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle6{
+    animation-duration: 90s;
+    animation-name: circle6;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle7{
+    animation-duration: 120s;
+    animation-name: circle7;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle8{
+    animation-duration: 130s;
+    animation-name: circle8;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle9{
+    animation-duration: 90s;
+    animation-name: circle9;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
