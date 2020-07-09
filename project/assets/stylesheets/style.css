@@ -17,8 +17,8 @@
 /* Navigation */
 #links{
     opacity: 0;
-    transition: opacity .2s;
-    transition-delay: 1.2s;
+    transition: opacity .6s;
+    transition-delay: .2s;
 }
 
 #links.load{
