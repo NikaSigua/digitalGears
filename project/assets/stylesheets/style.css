@@ -5,7 +5,6 @@
     border:solid 1px red
 }
     
-
 /* All gears */
 .gear, .gear div {
     position:absolute;
@@ -15,8 +14,28 @@
     transform:translate(-50%,-50%) rotate(0deg)
 }
 
+/* Navigation */
+#links{
+    opacity: 0;
+    transition: opacity .2s;
+    transition-delay: 1.2s;
+}
+
+#links.load{
+    opacity: 1;
+}
+
+
 /* First gear */
+#first.load{
+    opacity: 1;
+}
+
 #first{
+    opacity: 0;
+    transition: opacity .2s;
+    transition-delay: .2s;
+
     height:12em!important;
     width:12em!important;
 
@@ -29,19 +48,24 @@
 #first > div {
     height:12em!important;
     width:12em!important;
-}
-    
+}  
 #first > div > span {
     transform-origin:center 6em!important
 }
-
 @keyframes first {
     from {transform:translate(-50%,-50%) rotate(0deg)}
     to {transform:translate(-50%,-50%) rotate(360deg)}
 }
 
 /* Second gear */
+#second.load{
+    opacity: 1;
+}
 #second {
+    opacity: 0;
+    transition: opacity .3s;
+    transition-delay: .2s;
+
     height:10.525em!important;
     width:10.525em!important;
 
@@ -50,23 +74,27 @@
     animation-iteration-count:infinite;
     animation-direction:alternate;
 }
-
 #second > div {
     height:10.525em!important;
     width:10.525em!important;
 }  
-
 #second > div > span {
     transform-origin:center 5.2645em!important;
 }
-
 @keyframes second {
     from {transform:translate(-50%,-50%) rotate(0deg)}
     to {transform:translate(-50%,-50%) rotate(-360deg)}
 }
 
 /* Third gear */
+#third.load{
+    opacity: 1;
+}
 #third{
+    opacity: 0;
+    transition: opacity .4s;
+    transition-delay: .2s;
+
     height:9.05em!important;
     width:9.05em!important;
 
@@ -75,23 +103,27 @@
     animation-iteration-count:infinite;
     animation-direction:alternate;
 }
-
 #third > div {
     height:9.05em!important;
     width:9.05em!important;
-}
-    
+}   
 #third > div > span {
     transform-origin:center 4.526em!important;
 }
-
 @keyframes third {
     from {transform:translate(-50%,-50%) rotate(0deg)}
     to {transform:translate(-50%,-50%) rotate(-360deg)}
 }
 
 /* Fourth gear */
+#fourth.load{
+    opacity: 1;
+}
 #fourth {
+    opacity: 0;
+    transition: opacity .5s;
+    transition-delay: .2s;
+
     height:7.6em!important;
     width:7.6em!important;
 
@@ -100,23 +132,27 @@
     animation-iteration-count:infinite;
     animation-direction:alternate;
 }
-
 #fourth > div {
     height:7.6em!important;
     width:7.6em!important;
-}
-    
+}  
 #fourth > div > span {
     transform-origin:center 3.8em!important;
 }
-
 @keyframes fourth {
     from {transform:translate(-50%,-50%) rotate(0deg)}
     to {transform:translate(-50%,-50%) rotate(360deg)}
 }
 
 /* Fifth gear */
+#fifth.load{
+    opacity: 1;
+}
 #fifth {
+    opacity: 0;
+    transition: opacity .6s;
+    transition-delay: .2s;
+
     height:6.125em!important;
     width:6.125em!important;
 
@@ -125,91 +161,17 @@
     animation-iteration-count:infinite;
     animation-direction:alternate;
 }
-
 #fifth > div {
     height:6.125em!important;
     width:6.125em!important;
-}
-    
+}   
 #fifth > div > span {
     transform-origin:center 3.07em!important;
 }
-
 @keyframes fifth {
     from {transform:translate(-50%,-50%) rotate(0deg)}
     to {transform:translate(-50%,-50%) rotate(-360deg)}
 }
-
-/*
-.gear1 {
-    position:absolute;
-    height:12em;
-    border:solid 1px #000;
-    font-size:60px;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%) rotate(0deg)
-    }
-    
-.gear1 div {
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-    height:12em!important;
-    width:12em!important
-    }
-    
-.gear1 div span {
-    transform-origin:center 6em!important
-    }
-    
-.gear2 {
-    position:absolute;
-    height:11em;
-    border:solid 1px #000;
-    font-size:60px;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%)
-    }
-    
-.gear2 div {
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-    height:10.525em!important;
-    width:10.525em!important
-    }
-    
-.gear2 div span {
-    transform-origin:center 5.2625em!important
-    }
-    
-    
-@keyframes gear2 {
-    from {transform:translate(-50%,-50%) rotate(0deg)}
-    to {transform:translate(-50%,-50%) rotate(-360deg)}
-    }
-    
-@keyframes firs {
-    from {transform:translate(-50%,-50%) rotate(0deg)}
-    to {transform:translate(-50%,-50%) rotate(360deg)}
-    }
-
-#first {
-    animation-duration:60s;
-    animation-name:first;
-    animation-iteration-count:infinite;
-    animation-direction:alternate
-    }
-    
-#second {
-    animation-duration:140s;
-    animation-name:gear2;
-    animation-iteration-count:infinite;
-    animation-direction:alternate
-    }
-*/
 
 /*
 .navigation{

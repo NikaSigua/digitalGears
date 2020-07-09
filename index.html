@@ -13,9 +13,9 @@
     <script src="/project/assets/script.js"></script>
 </head>
 
-<body>
+<body class="body">
     <div class="main">
-        <div class="gear" style="border-radius: 50%; background-color: black; height: 27vh; width: 27vh;">
+        <div class="gear" style="border-radius: 50%; background-color: black; height: 4.3em; width: 4.3em; z-index: 3;" id="links">
             <ul style="text-align: center; font-size: 20px; color: white; margin-top: 36%;">
                 <li>
                     home
@@ -60,10 +60,12 @@
         new CircleType(document.getElementById('third'));
         new CircleType(document.getElementById('fourth'));
         new CircleType(document.getElementById('fifth'));
-            //new CircleType(document.getElementById('circle6'));
-            //new CircleType(document.getElementById('circle7'));
-            //new CircleType(document.getElementById('circle8'));
-            //new CircleType(document.getElementById('circle9'));
+        $("#first").addClass("load");
+        $("#second").addClass("load");
+        $("#third").addClass("load");
+        $("#fourth").addClass("load");
+        $("#fifth").addClass("load");
+        $("#links").addClass("load");
     </script>
 </body>
 
