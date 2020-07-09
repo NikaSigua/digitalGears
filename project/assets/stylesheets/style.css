@@ -1,30 +1,98 @@
-*{
-    margin: 0;
+
+.main{
+    /*
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    overflow: hidden; this one might not be necessary but it might decrease resource intensity.
+    */
+    font-family: Arial, Helvetica, sans-serif; 
+    
+    height: 98vh;
+    border: solid 1px red;
 }
 
+
+body{
+    /* overflow: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.74;
+}
+*/
+
+.gear1{
+    position: absolute;
+    height: 12em;
+    border: solid 1px black;
+    font-size: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(0deg);
+    
+}
+
+.gear1 div{
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height: 12em !important;
+    width: 12em !important;
+}
+
+.gear1 div span{
+    transform-origin: center 6em !important;
+}
+
+.gear2{
+    position: absolute;
+    height: 11em;
+    border: solid 1px black;
+    font-size: 60px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.gear2 div{
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height: 10.525em !important;
+    width: 10.525em !important;
+}
+
+.gear2 div span{
+    transform-origin: center 5.2625em !important;
+}
+
+
+/*
 .navigation{
     position: absolute;
     width: 100%;
     height: 75px;
     border-bottom: solid 1px gainsboro;
 }
+*/
 
-.main{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-}
 
 @keyframes circle1 {
-    from {}
-    to { transform: rotate(360deg); }
+    from { transform: translate(-50%,-50%) rotate(0deg);}
+    to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 @keyframes circle2 {
-    from {}
-    to { transform: rotate(-360deg); }
+    from { transform: translate(-50%,-50%) rotate(0deg);}
+    to { transform: translate(-50%, -50%) rotate(-360deg); }
 }
 
+/*
 @keyframes circle3 {
     from {}
     to { transform: rotate(360deg); }
@@ -59,13 +127,15 @@
     from {}
     to { transform: rotate(-360deg); }
 }
+*/
 
-.circle1{
-    animation-duration: 120s;
+#circle1{
+    animation-duration: 60s;
     animation-name: circle1;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 
 .circle2{
     animation-duration: 140s;
@@ -74,6 +144,7 @@
     animation-direction: alternate;
 }
 
+/*
 .circle3{
     animation-duration: 100s;
     animation-name: circle3;
@@ -122,3 +193,4 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+*/
