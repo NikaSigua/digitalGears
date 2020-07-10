@@ -10,19 +10,6 @@ body{
     width: 100vw;
     top: -50%;
 }
- 
-#GOUTSU, #GOUTSU div{
-    position: absolute;
-    height: 0em;
-    width: 0em;
-    margin-top: 0 !important;
-    text-align: center;
-    left: 50% !important;
-    color: red;
-    background-color: red;
-    font-size: 100px !important;
-    z-index: 9;
-}
 
 /* All gears */
 .gear, .gear div {
