@@ -20,7 +20,6 @@
     transition: opacity .6s;
     transition-delay: .2s;
 }
-
 #links.load{
     opacity: 1;
 }
@@ -30,7 +29,6 @@
 #first.load{
     opacity: 1;
 }
-
 #first{
     opacity: 0;
     transition: opacity .2s;
@@ -44,7 +42,6 @@
     animation-iteration-count:infinite;
     animation-direction:alternate;
 }
-
 #first > div {
     height:12em!important;
     width:12em!important;
@@ -98,7 +95,7 @@
     height:9.05em!important;
     width:9.05em!important;
 
-    animation-duration:360s;
+    animation-duration:200s;
     animation-name:third;
     animation-iteration-count:infinite;
     animation-direction:alternate;
